@@ -1,5 +1,5 @@
 theme: jekyll-theme-slate
 title: Heimdall
 description: "Multi-Terrain Patrol, Security, and Surveillance Robot"
-show_downloads: "false"
-google_analytics: "UA-176925840-1"
+show_downloads: false
+google_analytics: UA-176925840-1
