@@ -2,3 +2,37 @@
 ---
 
 @import "{{ site.theme }}";
+
+.current {
+  color: red;
+}
+
+// Basic properties of nav element
+.navList>ul
+{
+    list-style-type: none;
+    text-align: center;
+}
+// Spacing of nav elements
+.navList>ul>li
+{
+    display: inline-block;
+    margin:2px 0px;
+
+}
+// Nav element colors
+.navList>ul>li>a
+{
+    padding: .2em .1em;
+    background-color: #0058b0;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+// Nav element colors when hovering
+.navList>ul>li>a:hover
+{
+    background-color: #7AD;
+    color: #fff;
+}

@@ -1,0 +1,9 @@
+- name: Home
+  link: /
+
+- name: Team Members
+  link: /members.html
+
+- name: Project Updates
+  link: /posts.html
+

@@ -14,8 +14,11 @@ to generate a complete set of HTML and CSS files, which are then published to
 
 To add a page to the website, simply create a new [Markdown](https://en.wikipedia.org/wiki/Markdown) file in this
 repository. On the next commit, it will be added to the website, and automatically styled to match the rest of the
-website. Jekyll *should* automatically handle adding the page to the navigation menu, but it is always a good idea to
-double check.
+website.
+
+For project status updates, place them in the posts folder, and make the filename match this style: `yyyy-mm-dd-name.md`
+where *name* is the post name. If you need to add images to the post, nest the post in a folder with the same name as
+it, and place the images in the folder too.
 
 Since Markdown files are just plain text files, any text editor can be used. However, some editors are better than
 others, as they have specific markdown support. Some include:
@@ -23,10 +26,13 @@ others, as they have specific markdown support. Some include:
 * [Visual Studio Code](https://code.visualstudio.com/) supports syntax highlighting and page preview for Markdown files.
 Additional Markdown features can be added through the use of extensions (such as `markdownlint`, 'unotes', and
 `Markdown All in One`. Furthermore, it has git support built in, so you can quickly upload files to the website.
-* [Marktext](marktext.app) is an open-source text editor designed specifically for editing markdown documents.
+* [Marktext](marktext.app) is an open-source text editor designed specifically for editing Markdown documents. The best
+thing about it is that is will display markdown text exactly as it will be displayed on a website.
 * [prose.io](prose.io) is a very simple web-based editor that can open and save Markdown files to GitHub projects.
 * [stackedit.io](stackedit.io) is a little bit more advanced web-based editor. Its preview features are better than
 prose.io, but configuring it to sync with GitHub is more complicated.
+
+## Changing the theme:
 
 ## Local Testing
 

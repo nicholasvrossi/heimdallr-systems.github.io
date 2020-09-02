@@ -1,5 +1,43 @@
 theme: jekyll-theme-slate
-title: Heimdall
+title: Heimdallr
 description: Multi-Terrain Patrol, Security, and Surveillance Robot
 show_downloads: false
 google_analytics: UA-176925840-1
+
+collections:
+  members:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-postfiles
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+
+
