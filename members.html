@@ -2,13 +2,24 @@
 layout: default
 title: Team Members
 ---
-<h1>{{ page.title }}</h1>
 
-<ul style="list-style-type:none;">
-    {% for member in site.members %}
-    <li>
-        <h2><a href="{{ member.url }}">{{ member.name }}</a></h2>
+
+<h1>{{ page.title }}</h1>
+<div class="member-grid">
+    {%- for member in site.members -%}
+    <div>
+    <a href="{{ member.url }}">
+    <div>
+        <h2 >{{ member.name }}</h2>
+        <img src="{{ member.portrait }}" alt="{{ member.name  }}">
+
         <!--<p>{{ member.content | markdownify }}</p>-->
-    </li>
-    {% endfor %}
-</ul>
+    </div>
+    </a>
+    </div>
+    {%- endfor -%}
+</div>
+
+
+
+<object data="/assets/documents/Team Style Guide.pdf" width="1000" height="1000" type='application/pdf' />

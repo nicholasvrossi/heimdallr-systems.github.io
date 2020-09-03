@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen"
         href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
+    <script src="/assets/js/navbar.js">
+    </script>
     {% seo %}
 </head>
 
@@ -22,14 +23,7 @@
                 <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
             </a>
 
-            <nav class="navList">
-                <ul>
-                    {% for item in site.data.navigation %}
-                    <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"
-                            {% endif %}>{{ item.name }}</a></li>
-                    {% endfor %}
-                </ul>
-            </nav>
+            {% include navigation.html %}
 
         </header>
     </div>
@@ -42,9 +36,9 @@
     </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-
-        </footer>
+    <footer>
+        <div id="footer_wrap" class="outer">
+    </footer>
     </div>
 
     {% if site.google_analytics %}

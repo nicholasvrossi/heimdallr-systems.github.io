@@ -1,5 +1,5 @@
 ---
-short_name: Nicholas
+short_name: Rossi
 name: Nicholas Rossi
 major: Electrical Engineering
 ---

@@ -7,23 +7,30 @@ google_analytics: UA-176925840-1
 collections:
   members:
     output: true
-
+  documents:
+    output: true
 
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "members"
     values:
-      layout: "author"
+      layout: "member"
+      portrait: "/assets/images/Portrait_Placeholder.png"
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
   - scope:
+      path: "documents"
+    values:
+      layout: "document"
+  - scope:
       path: ""
     values:
       layout: "default"
+
 
 plugins:
   - jekyll-feed

@@ -5,10 +5,10 @@ layout: default
 
 <p>
     {{ page.date | date_to_string }}
-    {% assign member = site.members | where: 'short_name', page.author | first %}
-    {% if member %}
+    {%- assign member = site.members | where: 'short_name', page.author | first -%}
+    {%- if member -%}
     - <a href="{{ member.url }}">{{ member.name }}</a>
-    {% endif %}
+    {%- endif -%}
 </p>
 
 {{ content }}

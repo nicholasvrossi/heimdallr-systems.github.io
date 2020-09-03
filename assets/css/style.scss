@@ -8,31 +8,200 @@
 }
 
 // Basic properties of nav element
-.navList>ul
+
+.biography
 {
-    list-style-type: none;
+    overflow: auto
+}
+
+.inner {
+  position: relative;
+  max-width: 1200px;
+  padding: 20px 10px;
+  margin: 0 auto; }
+
+.pdfPage {
+    width: 100%;
+}
+
+#header_wrap {
+    padding: 0px;
+    text-align: center
+}
+
+.biography > img
+{
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding: 0px;
+  float: left;
+}
+
+
+ /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #0058b0;
+  font-family: Arial;
+  border-radius: 25px;
+  box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.25), -20px -20px 50px rgba(128, 128, 128, 0.25);
+  display: inline-block
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  height: 52px;
+}
+
+
+
+/* Add a  background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: #fff;
+    box-shadow: inset 20px 20px 35px rgba(0, 0, 0, 0.25), -20px -20px 50px rgba(128, 128, 128, 0.25);
+}
+
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:10px;
+}
+
+.member-grid > div > a > div > img{
+    width: 200px;
+    height: auto;
+
+}
+
+.member-grid > div > a > div > h2 {
+    width: 200px
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.closebtn {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a, .dropdown .dropbtn {
+    display: none;
+  }
+  .navbar a.icon {
+    display: block;
+  }
+
+  .navbar a{
+      float: unset
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon.
+This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    display: block;
+    border-radius: 0px;
+}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    width: 100%
+  }
+
+  .navbar{
+      border-radius: 0px;
+      display: block;
+      text-align: center
+  }
+
+  /* Show the dropdown menu on hover */
+.dropdown:active .dropdown-content {
+  display: block;
+}
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
     text-align: center;
-}
-// Spacing of nav elements
-.navList>ul>li
-{
-    display: inline-block;
-    margin:2px 0px;
-
-}
-// Nav element colors
-.navList>ul>li>a
-{
-    padding: .2em .1em;
-    background-color: #0058b0;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-}
-
-// Nav element colors when hovering
-.navList>ul>li>a:hover
-{
-    background-color: #7AD;
-    color: #fff;
+  }
+  .navbar.responsive .dropdown {float: none;}
+  .navbar.responsive .dropdown-content {position: relative;}
+  .navbar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }

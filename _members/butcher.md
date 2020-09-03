@@ -1,5 +1,5 @@
 ---
-short_name: Trevor
+short_name: butcher
 name: Trevor Butcher
 major: Electrical Engineering
 ---

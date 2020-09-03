@@ -2,7 +2,11 @@
 layout: default
 ---
 <h1>{{ page.name }}</h1>
-<h2>{{ page.major }}</h2>
+<h5> Major: {{ page.major }}</h5>
 
-{{ content }}
+<div class=biography>
+    <img src="{{ page.portrait }}" alt="{{ page.name  }}" width=200px height=auto>
 
+    {{ content }}
+
+</div>

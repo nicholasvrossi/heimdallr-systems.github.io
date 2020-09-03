@@ -7,3 +7,7 @@
 - name: Project Updates
   link: /posts.html
 
+- name: Documents
+  sublinks:
+    - name: Project Requirements
+      link: /documents/document.html
