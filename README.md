@@ -14,7 +14,8 @@ to generate a complete set of HTML and CSS files, which are then published to
 
 To add a page to the website, simply create a new [Markdown](https://en.wikipedia.org/wiki/Markdown) file in this
 repository. On the next commit, it will be added to the website, and automatically styled to match the rest of the
-website.
+website. GitHub provides a [really good guide](https://guides.github.com/features/mastering-markdown/) on how to
+write markdown.
 
 For project status updates, place them in the posts folder, and make the filename match this style: `yyyy-mm-dd-name.md`
 where *name* is the post name. If you need to add images to the post, nest the post in a folder with the same name as
