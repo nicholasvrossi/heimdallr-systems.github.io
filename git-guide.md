@@ -50,7 +50,7 @@ track of proposed changes.
 
 Once you have completed these tutorials, you know how to use most of the features that you will need to work with Git
 and GitHub. If you want to see a deeper dive into how to use Git, you can read the
-[Git Handbook](https://guides.github.com/introduction/git-handbook/)from GitHub, or the
+[Git Handbook](https://guides.github.com/introduction/git-handbook/) from GitHub, or the
 [complete documentation](https://git-scm.com/doc) on Git. These guides focus on using Git through the command line, but
 as the next section will show you,  that is not necessary to use Git.
 
