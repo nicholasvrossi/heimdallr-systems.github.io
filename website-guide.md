@@ -4,7 +4,9 @@ title: Editing the website
 author: roper
 ---
 
-# Editing the website
+[Return to all Guides](/guides.html)
+
+{{ page.title }}
 
 *Note: Before going through this guide, read the guide on [Getting Started with Git and GitHub](git-guide.html)*
 

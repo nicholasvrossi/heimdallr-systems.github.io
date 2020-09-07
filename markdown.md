@@ -3,6 +3,8 @@ layout: default
 title: Markdown Quick Reference
 author: roper
 ---
+[Return to all Guides](/guides.html)
+
 # {{ page.title }}
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It allows you to define a rich txt page in
