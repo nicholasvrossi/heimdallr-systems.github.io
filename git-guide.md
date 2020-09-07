@@ -4,6 +4,8 @@ title: Getting Started with Git and GitHub
 author: Roper
 ---
 
+[Return to all Guides](/guides.html)
+
 # Getting started with Git and GitHub
 
 This page contains some introductory information on using Git and GitHub, as well as some tutorials for how to use it.
