@@ -11,3 +11,9 @@
   sublinks:
     - name: Project Requirements
       link: /documents/Requirements.html
+    
+    - name: Literary Research
+      link: /document/Literary-Search.html
+
+    - name: Style Guide
+      link: /document/style-guide.html
