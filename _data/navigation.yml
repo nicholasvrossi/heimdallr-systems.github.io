@@ -7,6 +7,9 @@
 - name: Project Updates
   link: /posts.html
 
+- name: The Robot
+  link: /therobot.html
+
 - name: Documents
   sublinks:
     - name: Project Requirements
