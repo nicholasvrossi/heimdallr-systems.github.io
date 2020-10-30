@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="/assets/css/style.css?v=8824b63b1106a3a17d930f448d86b7fea04f34cb">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.svg">
+    <script src="/assets/js/navbar.js">
+    </script>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Getting Started with Git and GitHub | Heimdallr</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Getting Started with Git and GitHub" />
+<meta name="author" content="Roper" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Multi-Terrain Patrol, Security, and Surveillance Robot" />
+<meta property="og:description" content="Multi-Terrain Patrol, Security, and Surveillance Robot" />
+<link rel="canonical" href="https://heimdallr-robot.github.io/git-guide.html" />
+<meta property="og:url" content="https://heimdallr-robot.github.io/git-guide.html" />
+<meta property="og:site_name" content="Heimdallr" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Getting Started with Git and GitHub" />
+<script type="application/ld+json">
+{"description":"Multi-Terrain Patrol, Security, and Surveillance Robot","url":"https://heimdallr-robot.github.io/git-guide.html","headline":"Getting Started with Git and GitHub","@type":"WebPage","author":{"@type":"Person","name":"Roper"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+            <a href="index.html">
+                <h1 id="project_title">Heimdallr</h1>
+                <h2 id="project_tagline">Multi-Terrain Patrol, Security, and Surveillance Robot</h2>
+            </a>
+
+            <div class="navbar" id="myTopnav">
+    <a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a><a href="/">Home</a><a href="/members.html">Team Members</a><a href="/posts.html">Project Updates</a><a href="/therobot.html">The Robot</a><div class="dropdown">
+        <button class="dropbtn"> Documents
+            <i class="fa fa-caret-down"></i>
+
+        </button>
+        <div class="dropdown-content"><a href="/documents/Requirements.html">Project Requirements</a><a href="/documents/Literary-Search.html">Literary Research</a><a href="/documents/style-guide.html">Style Guide</a></div>
+    </div><a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
+</div>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+            <p><a href="/guides.html">Return to all Guides</a></p>
+
+<h1 id="getting-started-with-git-and-github">Getting started with Git and GitHub</h1>
+
+<p>This page contains some introductory information on using Git and GitHub, as well as some tutorials for how to use it.</p>
+
+<h2 id="the-difference-between-git-and-github">The difference between Git and GitHub</h2>
+
+<p><a href="https://git-scm.com/">Git</a> is a distributed version control system. It is used to keep track of all changes in source code, and to allow eaiser
+collaboration when writing code.</p>
+
+<p><a href="github.com">GitHub</a> is a website that allows users to store their source code. The code is stored using Git. This allows for source
+code to be stored in the cloud, with the change tracking and collaboration capabilities of Git.</p>
+
+<h2 id="some-basic-terminology">Some Basic Terminology</h2>
+
+<p>A Git <em>repository</em> is a collection with all of the code for a project. On your computer, it is just a folder with some
+special stuff going on behind the scenes when you interact with it using Git. After editing files in the repository, you
+take a snapshot of the repository called a <em>commit</em>. Git keeps track of all of the commits made to the repository,
+allowing for changes in files to be tracked.</p>
+
+<p>Futhermore, the commits are in a collection called a <em>branch</em>. Additional branches can be created, breaking off of the
+current branch, and can later be rejoined with original branch through a function called a <em>merge</em>. With GitHub, merges
+are created with something called a <em>pull request</em>. This will be covered in more detail later on.</p>
+
+<p>A user can <em>fork</em> an existing repository. This creates a complete copy of the repository (all commits and
+branches) under their own account. This allows them to make their own edits. Once again, <em>pull requests</em> are used to
+merge a fork back into the original source.</p>
+
+<p>The process of downloading a Git repository from a remote server (such as GitHub), is called <em>cloning</em> the repository.
+Once cloned, a repository is on the users computer, and new commits added can be <em>pushed</em> to the remote server, while
+new changes that are added to the server can be downloaded by <em>pulling</em> them.</p>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<p>For start, read <a href="https://guides.github.com/introduction/flow/">GitHub’s documentation on the flow of git</a>. This will
+give you a good visual overview of how Git works on a basic level.</p>
+
+<p>After that, jump in with the <a href="https://guides.github.com/activities/hello-world/">hello world</a> tutorial, which will walk
+you through the process of creating your own repository on GitHub, creating a new branch, making some changes, and then
+re-integrating the branch back into the  main code. Then read
+<a href="https://guides.github.com/activities/forking/">this guide on forking repositories</a>, which will have you fork a
+repository make some edits, and request for the changes you made to be re-integrated back into the original repository.
+This last one is very important, as it is how we will be able to keep track of who does what on the source, and keep
+track of proposed changes.</p>
+
+<p>Once you have completed these tutorials, you know how to use most of the features that you will need to work with Git
+and GitHub. If you want to see a deeper dive into how to use Git, you can read the
+<a href="https://guides.github.com/introduction/git-handbook/">Git Handbook</a> from GitHub, or the
+<a href="https://git-scm.com/doc">complete documentation</a> on Git. These guides focus on using Git through the command line, but
+as the next section will show you,  that is not necessary to use Git.</p>
+
+<p>More tutorials on how to use everything that GitHub offers can be found in the
+<a href="https://guides.github.com/">GitHub Guides</a> or the <a href="https://docs.github.com/en">GitHub Documentation</a>.</p>
+
+<h2 id="sofware-for-working-with-git-and-github">Sofware for working with Git and GitHub</h2>
+
+<h3 id="installing-git">Installing Git</h3>
+
+<p>If you use a computer running Linux, you can install Git through your favorite package manager.</p>
+
+<p>If you want to install just the command line program on Windows or Mac, you can download an installer on the
+<a href="git-scm.com">official Git website</a>.</p>
+
+<p>However, the eaisest way to install (and get started with) Git is probably by downloading GitHub Desktop.</p>
+
+<h3 id="github-desktop">GitHub Desktop</h3>
+
+<p>GitHub has made a program that makes using Git on your computer (Windows, Mac, and Linux) a lot eaiser than having
+to use the command line. While it lacks a few of Git’s more advanced features, it covers (in my experience) pretty much
+everything you will need to do on a daily basis. Download it from <a href="https://desktop.github.com/">https://desktop.github.com/</a>.</p>
+
+<p>Once you download it and launch it for the first time, it will give you a quick (~5 minute) tutorial on how to use it.</p>
+
+<h3 id="other-software">Other Software</h3>
+
+<p>There are other desktop programs for working with Git available. Because of how Git is written, they should all work
+fine with GitHub.</p>
+
+<p>Additionally, a lot of code editor and complete integrated development environments have Git built in now, so you can
+manage your project through Git wihtout having to leave your favorite editor.</p>
+
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div id="footer_wrap" class="outer">
+    </footer>
+    </div>
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-176925840-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+</body>
+
+</html>

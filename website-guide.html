@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="/assets/css/style.css?v=8824b63b1106a3a17d930f448d86b7fea04f34cb">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.svg">
+    <script src="/assets/js/navbar.js">
+    </script>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Editing the website | Heimdallr</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Editing the website" />
+<meta name="author" content="roper" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Multi-Terrain Patrol, Security, and Surveillance Robot" />
+<meta property="og:description" content="Multi-Terrain Patrol, Security, and Surveillance Robot" />
+<link rel="canonical" href="https://heimdallr-robot.github.io/website-guide.html" />
+<meta property="og:url" content="https://heimdallr-robot.github.io/website-guide.html" />
+<meta property="og:site_name" content="Heimdallr" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Editing the website" />
+<script type="application/ld+json">
+{"description":"Multi-Terrain Patrol, Security, and Surveillance Robot","url":"https://heimdallr-robot.github.io/website-guide.html","headline":"Editing the website","@type":"WebPage","author":{"@type":"Person","name":"roper"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+            <a href="index.html">
+                <h1 id="project_title">Heimdallr</h1>
+                <h2 id="project_tagline">Multi-Terrain Patrol, Security, and Surveillance Robot</h2>
+            </a>
+
+            <div class="navbar" id="myTopnav">
+    <a href="javascript:void(0)" class="closebtn" onclick="openNav()">&times;</a><a href="/">Home</a><a href="/members.html">Team Members</a><a href="/posts.html">Project Updates</a><a href="/therobot.html">The Robot</a><div class="dropdown">
+        <button class="dropbtn"> Documents
+            <i class="fa fa-caret-down"></i>
+
+        </button>
+        <div class="dropdown-content"><a href="/documents/Requirements.html">Project Requirements</a><a href="/documents/Literary-Search.html">Literary Research</a><a href="/documents/style-guide.html">Style Guide</a></div>
+    </div><a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
+</div>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+            <p><a href="/guides.html">Return to all Guides</a></p>
+
+<p>Editing the website</p>
+
+<p><em>Note: Before going through this guide, read the guide on <a href="git-guide.html">Getting Started with Git and GitHub</a></em></p>
+
+<p>All of the files that make this website work on stored in a
+<a href="https://github.com/heimdallr-systems/heimdallr-systems.github.io/">single repository on GitHub</a>.
+All of the pages in the website are written in <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>. When a new commit is
+made to the repository, <a href="pages.github.com">GitHub Pages</a> uses the <a href="https://jekyllrb.com/">Jekyll</a> static site generator
+to generate a complete set of HTML and CSS files, which are then published to
+<a href="heimdall-robot.github.io">heimdall-robot.github.io</a></p>
+
+<h2 id="adding-pages">Adding pages</h2>
+
+<p>To add a page to the website, create a new <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> file in this
+repository (do not worry about forking it like do for most repositories, you can edit directly in this one).
+The only difference from a normal markdown document is that at the beginning of the markdown document,
+you should place the following lines to tell Jekyll to place the page on the website:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">default</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Page title</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Your Last name</span>
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<p>Once you commit the file, it will be added to the website, and automatically styled to match the rest of the
+website. GitHub provides a <a href="https://guides.github.com/features/mastering-markdown/">really good guide</a> on how to
+write markdown.</p>
+
+<p>For project status updates, place them in the posts folder, make the filename match this style: <code class="language-plaintext highlighter-rouge">yyyy-mm-dd-name.md</code>
+where <em>name</em> is the post name, and update the beginning of the file to use <code class="language-plaintext highlighter-rouge">layout:post</code> If you need to add images
+to the post, nest the post in a folder with the same name as it, and place the images in the folder too.</p>
+
+<p>Since Markdown files are just plain text files, any text editor can be used. However, some editors are better than
+others, as they have specific markdown support. Some include:</p>
+
+<ul>
+  <li><a href="https://docs.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository">GitHub</a> has a simple
+editor and preview system built into it, so you can edit files right on GitHub.com.</li>
+  <li><a href="prose.io">prose.io</a> is a very simple web-based editor that can open and save Markdown files to GitHub projects.</li>
+  <li><a href="stackedit.io">stackedit.io</a> is a little bit more advanced web-based editor. Its preview features are better than
+prose.io, but configuring it to sync with GitHub is more complicated.</li>
+  <li><a href="marktext.app">Marktext</a> is an open-source text editor designed specifically for editing Markdown documents. The best
+thing about it is that is will display markdown text exactly as it will be displayed on a website.</li>
+  <li><a href="https://code.visualstudio.com/">Visual Studio Code</a> supports syntax highlighting and page preview for Markdown files.
+Additional Markdown features can be added through the use of extensions (such as <code class="language-plaintext highlighter-rouge">markdownlint</code>, ‘unotes’, and
+<code class="language-plaintext highlighter-rouge">Markdown All in One</code>. Furthermore, it has git support built in, so you can quickly upload files to the website.</li>
+</ul>
+
+<h2 id="local-testing">Local Testing</h2>
+
+<p>If you want to test changes that you have made to the site without having to push a commit to GitHub, the
+eaisest way is to use Local testing for this website is eaisest with Linux. To test the page locally with Windows,
+<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">install the Windows Subsystem for Linux</a>.</p>
+
+<p>In Linux:</p>
+
+<ol>
+  <li>Clone this repository with <code class="language-plaintext highlighter-rouge">git clone https://github.com/Heimdall-Robot/heimdall-robot.github.io.git</code>.</li>
+  <li>Switch to the pages directory with <code class="language-plaintext highlighter-rouge">cd heimdall-robot.github.io</code>.</li>
+  <li>Install ruby with <code class="language-plaintext highlighter-rouge">sudo apt install ruby ruby-dev</code>.</li>
+  <li>Install bundler with <code class="language-plaintext highlighter-rouge">sudo gem install bundler</code>.</li>
+  <li>Install GitHub Pages bootstrap with <code class="language-plaintext highlighter-rouge">sudo gem install github-pages</code>.</li>
+  <li>Boostrap the site with <code class="language-plaintext highlighter-rouge">bundle install</code>.</li>
+  <li>Start serving the website with <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve --incremental</code>.</li>
+  <li>In your web browser, navigate to <code class="language-plaintext highlighter-rouge">127.0.0.1:4000</code>.</li>
+  <li>When necessary, update the dependencies with <code class="language-plaintext highlighter-rouge">bundle update</code>.</li>
+</ol>
+
+<p>While <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> is running, it will automatically rebuild pages as you make changes to them, so all
+you need to do after updating is to reload the page.
+The caveat to this is that it will not work on the Windows Subsystem for Linux if the repository was cloned to a
+location on the Windows filesystem. There are two fixes for this:</p>
+
+<ol>
+  <li>Manually rebuild by exiting <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve --incremental</code> and then re-running it.</li>
+  <li>Move the <code class="language-plaintext highlighter-rouge">heimdall-robot.github.io</code> directory to a native Linux directory (such as your home folder)</li>
+</ol>
+
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div id="footer_wrap" class="outer">
+    </footer>
+    </div>
+
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-176925840-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+</body>
+
+</html>
